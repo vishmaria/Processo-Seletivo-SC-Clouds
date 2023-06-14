@@ -1,3 +1,4 @@
+# OBS: As duas funções não são a melhor abordagem para entradas muito grandes.
 def fibonacci(n):
     if n < 0:
         print("Por favor informe um número >= 0")
@@ -23,7 +24,7 @@ def linear_fibonacci(n):
             f1 = fn
         return f1
 
-a = fibonacci(-1)
-b = linear_fibonacci(-1)
+a = fibonacci(30)
+b = linear_fibonacci(30)
 
 print(a, b)
